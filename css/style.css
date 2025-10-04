@@ -195,6 +195,10 @@ footer ul p {
     padding: 3px 0;
 }
 
+#catalog-div {
+    margin-bottom: 40px;
+}
+
 #catalog-div div {
     display: inline-block;
 }
@@ -214,4 +218,49 @@ footer ul p {
 
 #catalog-div div p {
     padding: 15px;
+}
+
+
+
+#reviews {
+    background-color: #e8efff;
+}
+
+#reviews-arr  {
+    padding: 15px 0;
+}
+
+#reviews blockquote {
+    background-color: white;
+    box-shadow: 0 5px 10px #0005;
+    margin: 15px 40px;
+    padding: 15px 20px;
+}
+
+#reviews blockquote small {
+    color:#99aadd;
+    font-weight: 600;
+}
+
+#reviews input, textarea {
+    border: none;
+    font-size: small;
+    padding: 8px 16px;
+    margin: 5px 40px;
+    border-radius: 0;
+    width: calc(100% - 112px);
+}
+
+#reviews button {
+    border-radius: 0;
+    padding: 0%;
+    padding: 8px 25px;
+    margin: 5px 40px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #ffc2c7;
+    box-shadow: 0 3px 5px #0005;
+    color: white;
+    font-size: small;
+    font-family: Arial, sans-serif;
 }
