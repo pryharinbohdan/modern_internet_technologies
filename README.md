@@ -1,2 +1,0 @@
-# modern_internet_technologies
-Сучасні інтернет технології
