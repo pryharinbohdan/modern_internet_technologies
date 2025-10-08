@@ -13,6 +13,14 @@ header {
     align-items: center;
 }
 
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
 header ul{
     display: flex;
     align-items: center;
@@ -23,6 +31,15 @@ header a {
     text-decoration: none;
     color: white;
     font-size: 20px;
+    transition: 0.2s;
+}
+
+header a:hover {
+    color: #147;
+}
+
+#bouquet-types-area a:hover {
+    background-color: #7796cd;
 }
 
 header img {
@@ -92,6 +109,11 @@ header lu {
     color: white;
     font-size: larger;
     box-shadow: 0 3px 5px #00000044;
+    transition: 0.2s;
+}
+
+#reviews button:hover {
+    background-color: #ff9097;
 }
 
 
@@ -110,63 +132,6 @@ header lu {
 #work-for-you-div {
     display: flex;
     justify-content: space-evenly;
-}
-
-@media (max-width: 920px) {
-    #bouquet-types-area {
-        display: inline;
-    }
-}
-
-@media (min-width: 721px) {
-    .small-display-bg {
-        display: none;
-    }
-}
-
-@media (max-width: 720px) {
-    .small-display-bg {
-        display: block;
-    }
-    #rain-bouquet img{
-        display: none;
-    }
-    #about img {
-        display: none;
-    }
-    header img {
-        display: none;
-    }
-    header {
-        justify-content: center;
-    }
-    #bouquet-types-area a {
-        position: absolute;
-        top: 40%;
-        bottom: 40%;
-        left: 10%;
-        width: 80%;
-    }
-    #bouquet-types-area div {
-        height: 200px;
-        overflow: hidden;
-    }
-    #bouquet-types-area {
-        width: calc(100% - 80px);
-    }
-    #bouquet-types-area div img{
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-width: 400px) {
-    #work-for-you-div p {
-        display: none;
-    }
-    #work-for-you-div img {
-        display: none;
-    }
 }
 
 #work-for-you-div div{
@@ -278,6 +243,7 @@ footer ul p {
     color: white;
     font-size: small;
     font-family: Arial, sans-serif;
+    transition: 0.2s;
 }
 
 
@@ -287,4 +253,68 @@ footer ul p {
 
 .small-display-bg-img {
     width: 100%;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 920px) {
+    #bouquet-types-area {
+        display: inline;
+    }
+}
+
+@media (min-width: 721px) {
+    .small-display-bg {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .small-display-bg {
+        display: block;
+    }
+    #rain-bouquet img{
+        display: none;
+    }
+    #about img {
+        display: none;
+    }
+    header img {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    #bouquet-types-area a {
+        position: absolute;
+        top: 40%;
+        bottom: 40%;
+        left: 10%;
+        width: 80%;
+    }
+    #bouquet-types-area div {
+        height: 200px;
+        overflow: hidden;
+    }
+    #bouquet-types-area {
+        width: calc(100% - 80px);
+    }
+    #bouquet-types-area div img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    #work-for-you-div p {
+        display: none;
+    }
+    #work-for-you-div img {
+        display: none;
+    }
 }
