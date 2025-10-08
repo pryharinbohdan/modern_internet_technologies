@@ -112,6 +112,63 @@ header lu {
     justify-content: space-evenly;
 }
 
+@media (max-width: 920px) {
+    #bouquet-types-area {
+        display: inline;
+    }
+}
+
+@media (min-width: 721px) {
+    .small-display-bg {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .small-display-bg {
+        display: block;
+    }
+    #rain-bouquet img{
+        display: none;
+    }
+    #about img {
+        display: none;
+    }
+    header img {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    #bouquet-types-area a {
+        position: absolute;
+        top: 40%;
+        bottom: 40%;
+        left: 10%;
+        width: 80%;
+    }
+    #bouquet-types-area div {
+        height: 200px;
+        overflow: hidden;
+    }
+    #bouquet-types-area {
+        width: calc(100% - 80px);
+    }
+    #bouquet-types-area div img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    #work-for-you-div p {
+        display: none;
+    }
+    #work-for-you-div img {
+        display: none;
+    }
+}
+
 #work-for-you-div div{
     margin: 15px;
     text-align: center;
