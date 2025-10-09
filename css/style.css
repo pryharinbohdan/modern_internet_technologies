@@ -8,10 +8,6 @@ body {
     font-optical-sizing: auto;
 }
 
-header, header nav, header ul, #rain-bouquet, #bouquet-types, #about, #work-for-you-div {
-    display: flex;
-}
-
 header {
     background-color: #a9bfe4;
     display: flex;
