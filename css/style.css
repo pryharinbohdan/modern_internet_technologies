@@ -23,6 +23,12 @@ header nav {
     width: 100%;
 }
 
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
 header ul{
     display: flex;
     align-items: center;
