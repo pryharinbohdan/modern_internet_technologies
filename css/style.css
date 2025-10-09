@@ -4,9 +4,12 @@
 }
 
 body {
-    /*font-family: Arial, Helvetica, sans-serif;*/
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
+}
+
+header, header nav, header ul, #rain-bouquet, #bouquet-types, #about, #work-for-you-div {
+    display: flex;
 }
 
 header {
@@ -81,10 +84,6 @@ header lu {
     position: relative;
     justify-content: center;
 }
-/*
-#bouquet-types div{
-    display: flex;
-}*/
 
 .bouquet-img {
     height: 200px;
