@@ -183,27 +183,31 @@ footer ul p {
 }
 
 #catalog-div {
-    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* адаптивні колонки */
+    gap: 25px; /* відстань між картками */
+    justify-items: center;
+    padding: 20px;
 }
 
 #catalog-div div {
     display: inline-block;
 }
 
-#catalog-div div article img {
+#catalog-div article img {
     max-width: 300px;
 }
 
-#catalog-div div article {
+#catalog-div article {
     margin: 15px;
     box-shadow: 0 5px 10px #ff003750;
 }
-
+/*
 #catalog-div {
     text-align: center;
-}
+}*/
 
-#catalog-div div p {
+#catalog-div p {
     padding: 15px;
 }
 
