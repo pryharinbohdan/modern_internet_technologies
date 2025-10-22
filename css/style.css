@@ -195,17 +195,13 @@ footer ul p {
 }
 
 #catalog-div article img {
-    max-width: 300px;
+    width: 300px;
 }
 
 #catalog-div article {
     margin: 15px;
     box-shadow: 0 5px 10px #ff003750;
 }
-/*
-#catalog-div {
-    text-align: center;
-}*/
 
 #catalog-div p {
     padding: 15px;
