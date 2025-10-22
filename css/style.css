@@ -263,10 +263,24 @@ footer ul p {
 }
 
 
+#header-button-area {
+    display: none;
+}
 
+#header-button-area button{
+    background-color: #0000;
+    border: none;
+}
 
+.menu-icon path {
+  fill: white;
+}
 
-
+.menu-icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
 
 
 @media (max-width: 920px) {
@@ -294,8 +308,22 @@ footer ul p {
     #about img {
         display: none;
     }
-    header img {
+    header ul {
         display: none;
+    }
+    #header-zero-div {
+        display: none;
+    }
+
+    #header-button-area {
+        position: relative;
+        display: inline;
+        width: calc(50% - 100px);
+        padding: 0;
+        margin: 0;
+    }
+    header nav {
+        justify-content: left;
     }
     header {
         justify-content: center;
