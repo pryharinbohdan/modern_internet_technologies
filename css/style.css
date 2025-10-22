@@ -130,20 +130,26 @@ header lu {
     background-color: #e8efff;
 }
 
-#work-for-you-div {
+#work-for-you-div, #work-for-you-div-display {
     display: flex;
     justify-content: space-evenly;
 }
 
-#work-for-you-div div{
+#work-for-you-div div, #work-for-you-div-display div {
     margin: 15px;
     text-align: center;
 }
 
-#work-for-you-div img {
+#work-for-you-div img , #work-for-you-div-display img {
     height: 70px;
     margin: 20px 0;
 }
+
+
+#work-for-you-mobile {
+    display: none;
+}
+
 
 #work-for-you-txt {
     color: #99aadd;
@@ -276,6 +282,9 @@ footer ul p {
 }
 
 @media (max-width: 720px) {
+    .first-pole {
+        text-align: center;
+    }
     .small-display-bg {
         display: block;
     }
@@ -311,11 +320,11 @@ footer ul p {
     }
 }
 
-@media (max-width: 400px) {
-    #work-for-you-div p {
-        display: none;
+@media (max-width: 500px) {
+    #work-for-you-mobile {
+        display: block;
     }
-    #work-for-you-div img {
+    #work-for-you-div-display {
         display: none;
     }
 }
