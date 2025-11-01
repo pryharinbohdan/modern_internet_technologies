@@ -12,6 +12,8 @@ header {
     background-color: #a9bfe4;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 3;
 }
 
 
@@ -282,6 +284,34 @@ footer ul p {
   margin: 10px;
 }
 
+#burger-menu {
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    background-color: #5d7fb999;
+    backdrop-filter: blur(20px);
+}
+
+#burger-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#burger-menu li {
+    margin: 10px;
+}
+
+.burger-menu-hidden {
+    transform: translateY(-100%);
+}
+
+.burger-menu-show {
+    transform: translateY(0);
+}
+
+#burger-menu, .burger-menu-hidden, .burger-menu-show {
+    transition: .3s;
+}
 
 @media (max-width: 920px) {
     #bouquet-types-area {
