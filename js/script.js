@@ -50,7 +50,43 @@ nextBtn.addEventListener('click', ()=> {
     }
 });
 
-// GET ЗАПИТ ДО СЕРВЕРУ
+const catalog = document.querySelector("#catalog-div");
+
+// flowers info (FETCH)
+
+let flowersInfo;
+
+function loadCards() {
+    catalog.innerHTML = '';
+    for (let i = 0; flowersInfo[i] !== undefined; ++i) {
+        const imgURL = flowersInfo[i].imgURL;
+        const altImgDescription = flowersInfo[i].altImgDescription;
+        const flowerDescription = flowersInfo[i].description;
+        const flowerPrice = flowersInfo[i].price;
+
+        catalog.innerHTML += `
+            <article>
+                <img src="${imgURL}" alt="${altImgDescription}">
+                <p>${flowerDescription}</p>
+                <p>${flowerPrice} грн</p>
+            </article>
+        `;
+    }
+}
+
+// GET ЗАПИТ ДО СЕРВЕРУ (для інфи квітів)
+
+fetch('https://flower-store-bohdan.free.beeceptor.com')
+    .then(response => response.json())
+    .then(data => {
+        flowersInfo = data;
+        loadCards();
+    })
+
+
+
+
+// GET ЗАПИТ ДО СЕРВЕРУ (для відгуків)
 
 fetch("https://jsonplaceholder.typicode.com/comments")
     .then(response => response.json())
