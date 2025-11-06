@@ -76,7 +76,7 @@ function loadCards() {
 
 // GET ЗАПИТ ДО СЕРВЕРУ (для інфи квітів)
 
-fetch('https://flower-store-bohdan.free.beeceptor.com')
+fetch('https://boban123.pp.ua/api-flowers-store/assortment')
     .then(response => response.json())
     .then(data => {
         flowersInfo = data;
