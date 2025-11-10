@@ -76,7 +76,7 @@ function loadCards() {
 
 // GET ЗАПИТ ДО СЕРВЕРУ (для інфи квітів)
 
-fetch('https://boban123.pp.ua/api-flowers-store/assortment')
+fetch('http://localhost:5000/api-flowers-store/assortment')
     .then(response => response.json())
     .then(data => {
         flowersInfo = data;
@@ -95,3 +95,31 @@ fetch("https://jsonplaceholder.typicode.com/comments")
         showComments();
     });
 
+const inputName = document.querySelector("#name").value;
+const inputReview = document.querySelector("#review").value;
+
+const postBtn = document.querySelector("#reviews form button")
+
+postBtn.addEventListener('click', ()=>{
+    if (inputName != "" && inputReview != "") {
+        press_post();
+    }
+});
+
+function press_post() {
+    // POST ЗАПИТ ДО СЕРВЕРУ (для відгуків)
+
+    fetch("https://jsonplaceholder.typicode.com/comments", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            email: inputName,
+            name: inputName,
+            body: inputReview
+        })
+    })
+        .then(response => response.json())
+        .then(data => console.log(data));
+}
