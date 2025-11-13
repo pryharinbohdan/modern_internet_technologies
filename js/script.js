@@ -100,11 +100,6 @@ const inputReview = document.querySelector("#review").value;
 
 const postBtn = document.querySelector("#reviews form button")
 
-postBtn.addEventListener('click', ()=>{
-    if (inputName != "" && inputReview != "") {
-        press_post();
-    }
-});
 
 function press_post() {
     // POST ЗАПИТ ДО СЕРВЕРУ (для відгуків)
@@ -123,3 +118,9 @@ function press_post() {
         .then(response => response.json())
         .then(data => console.log(data.status));
 }
+
+postBtn.addEventListener('click', ()=>{
+    if (inputName != "" && inputReview != "") {
+        press_post();
+    }
+});
