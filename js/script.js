@@ -120,7 +120,7 @@ function press_post() {
 }
 
 postBtn.addEventListener('click', ()=>{
-    if (inputName != "" && inputReview != "") {
+    //if (inputName != "" && inputReview != "") {
         press_post();
-    }
+    //}
 });
