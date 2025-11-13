@@ -116,7 +116,7 @@ function press_post() {
         })
     })
         .then(response => response.json())
-        .then(data => console.log(data.status));
+        .then(data => alert(data.status));
 }
 
 postBtn.addEventListener('click', ()=>{
