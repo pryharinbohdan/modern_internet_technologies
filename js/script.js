@@ -76,7 +76,7 @@ function loadCards() {
 
 // GET ЗАПИТ ДО СЕРВЕРУ (для інфи квітів)
 
-fetch('http://localhost:5000/api-flowers-store/assortment')
+fetch('https://bohdan-pryh.free.beeceptor.com/assortment')
     .then(response => response.json())
     .then(data => {
         flowersInfo = data;
@@ -109,7 +109,7 @@ postBtn.addEventListener('click', ()=>{
 function press_post() {
     // POST ЗАПИТ ДО СЕРВЕРУ (для відгуків)
 
-    fetch("https://jsonplaceholder.typicode.com/comments", {
+    fetch("https://bohdan-pryh.free.beeceptor.com/comment", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
