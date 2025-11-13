@@ -119,8 +119,4 @@ function press_post() {
         .then(data => alert(data.status));
 }
 
-postBtn.addEventListener('click', ()=>{
-    //if (inputName != "" && inputReview != "") {
-        press_post();
-    //}
-});
+postBtn.addEventListener('click', press_post);
